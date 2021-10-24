@@ -10,7 +10,7 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Warriyo ", filePath: "songs/1.mp3", coverPath: "covers/1.png"},
+    {songName: "Warriyo ", filePath: "songs/1.mp3", coverPath: "1.png"},
     {songName: "Cielo ", filePath: "songs/2.mp3", coverPath: "covers/2.png"},
     {songName: "DEAF KEV", filePath: "songs/3.mp3", coverPath: "covers/3.png"},
     {songName: "Different Heaven ", filePath: "songs/4.mp3", coverPath: "covers/4.png"},
