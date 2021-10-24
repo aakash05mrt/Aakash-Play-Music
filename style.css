@@ -188,7 +188,7 @@ nav ul li a{
     }
     .songName{
         font-weight: bolder;
-        background: aliceblue;
+/*         background: aliceblue; */
         display: flex;
         width: 139px;
         justify-content: center;
@@ -198,7 +198,7 @@ nav ul li a{
         margin-top: 5px;
     }
     .timestamp{
-        background: aliceblue;
+/*         background: aliceblue; */
     /* border: 2px solid wheat; */
     /* border-radius: 6px; */
     border-top: none;
