@@ -182,9 +182,10 @@ nav ul li a{
         margin: -2px 64px;
         /* border-radius: 34px; */
         height: 89px;
+        border: 3px solid #9191dd;
         border-radius: 70px;
         /* opacity: 0.7; */
-        padding: 2px
+        padding: 0px
     }
     .songName{
         font-weight: bolder;
