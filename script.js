@@ -62,12 +62,11 @@ const makeAllPlays = ()=>{
     })
 }
 
+
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{ 
         makeAllPlays();
         songIndex = parseInt(e.target.id);
-        if(audioElement.paused || audioElement.currentTime<=0)
-        {
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
         audioElement.src = `songs/${songIndex+1}.mp3`;
@@ -77,27 +76,45 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         gif.style.opacity = 1;
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
-        progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
-        myProgressBar.value = progress;
-        }
-        else
-        {
-        e.target.classList.remove('fa-pause-circle');
-        e.target.classList.add('fa-play-circle');
-        audioElement.src = `songs/${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
-        audioElement.currentTime = 0;
-        audioElement.pause();
-        gif.style.opacity = 0;
-        masterPlay.classList.remove('fa-pause-circle');
-        masterPlay.classList.add('fa-play-circle');
-        progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
-        myProgressBar.value = progress;
-        }
-       
-        
     })
 })
+
+// Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+//     element.addEventListener('click', (e)=>{ 
+//         makeAllPlays();
+//         songIndex = parseInt(e.target.id);
+//         if(audioElement.paused || audioElement.currentTime<=0)
+//         {
+//         e.target.classList.remove('fa-play-circle');
+//         e.target.classList.add('fa-pause-circle');
+//         audioElement.src = `songs/${songIndex+1}.mp3`;
+//         masterSongName.innerText = songs[songIndex].songName;
+//         audioElement.currentTime = 0;
+//         audioElement.play();
+//         gif.style.opacity = 1;
+//         masterPlay.classList.remove('fa-play-circle');
+//         masterPlay.classList.add('fa-pause-circle');
+//         progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
+//         myProgressBar.value = progress;
+//         }
+//         else
+//         {
+//         e.target.classList.remove('fa-pause-circle');
+//         e.target.classList.add('fa-play-circle');
+//         audioElement.src = `songs/${songIndex+1}.mp3`;
+//         masterSongName.innerText = songs[songIndex].songName;
+//         audioElement.currentTime = 0;
+//         audioElement.pause();
+//         gif.style.opacity = 0;
+//         masterPlay.classList.remove('fa-pause-circle');
+//         masterPlay.classList.add('fa-play-circle');
+//         progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
+//         myProgressBar.value = progress;
+//         }
+       
+        
+//     })
+// })
 
 document.getElementById('next').addEventListener('click', ()=>{
     if(songIndex>=9){
