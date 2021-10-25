@@ -217,8 +217,8 @@ nav ul li a{
         justify-content: center;
         align-items: center;
         border: 2px solid wheat;
-        background-color: white;
-        border-radius: 7px;
+        background-color: #f2cece;
+        border-radius: 100px;
     }
 
     .container
@@ -226,6 +226,10 @@ nav ul li a{
         /* background-color: #529160; */
        background: url(covers/4.jpg);
        /* background-size: cover; */
+        border: 2px solid white;
+    }
+    body{
+        background-color:#499857;
     }
     
 }
