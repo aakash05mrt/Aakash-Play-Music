@@ -15,11 +15,11 @@ let songs = [
     {songName: "Kasoor", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
     {songName: "Sakhiyaan ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
     {songName: "Tuje Kitna Chahne", filePath: "songs/5.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Dil Kyun ye Mera ", filePath: "songs/3.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Baari ", filePath: "songs/2.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Sakhiyaan ", filePath: "songs/1.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Tuje Kitna Chahne", filePath: "songs/5.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Kasoor ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Dil Kyun ye Mera ", filePath: "songs/6.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Baari ", filePath: "songs/7.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Sakhiyaan ", filePath: "songs/8.mp3", coverPath: "covers/4.jpg"},
+//     {songName: "Tuje Kitna Chahne", filePath: "songs/5.mp3", coverPath: "covers/2.jpg"},
+//     {songName: "Kasoor ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
