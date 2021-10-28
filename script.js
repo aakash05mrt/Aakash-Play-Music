@@ -22,6 +22,7 @@ let songs = [
 //     {songName: "Kasoor ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
 ]
 
+
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
@@ -61,9 +62,6 @@ const makeAllPlays = ()=>{
         element.classList.add('fa-play-circle');
     })
 }
-
-
-
 
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{ 
@@ -115,7 +113,6 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
-    gif.style.opacity = 1;
 
 })
 
@@ -132,5 +129,4 @@ document.getElementById('previous').addEventListener('click', ()=>{
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
-    gif.style.opacity = 1;
 })
