@@ -185,7 +185,10 @@ nav ul li a{
         border: 3px solid #eb680a;
         border-radius: 70px;
         /* opacity: 0.7; */
-        padding: 0px
+        padding: 0px;
+        box-shadow: 0px 0px 7px 1px #d3a6a6;
+}
+
     }
     .songName{
         font-weight: bolder;
@@ -218,19 +221,20 @@ nav ul li a{
         align-items: center;
         border: 2px solid wheat;
         background-color: #f2cece;
-        border-radius: 100px;
+        border-radius: 8px;
     }
 
     .container
     {
-        /* background-color: #529160; */
-       background: url(covers/4.jpg);
-       /* background-size: cover; */
         border: 2px solid white;
-        background:#302e59;
+    background: #302e59;
+    box-shadow: -2px 2px 12px 3px #df9f9f;
+}
+
+
     }
     body{
-        background-color:#7fc98c;
+        background-color:#719ebd;
     }
     
 }
